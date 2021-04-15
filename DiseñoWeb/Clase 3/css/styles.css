@@ -1,0 +1,53 @@
+body {
+    background-color: grey;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 100;
+    font-size: 1.3em;
+
+}
+
+.h0 {
+    margin-top: -.89em; 
+
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: "Black 900";
+    font-size: 3em;
+    font-weight: 900;
+    /* text-shadow: 3px 3px 3px #ababab; */
+}
+
+h1 {
+    color: rgb(98, 4, 185);
+    font-style:normal;
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+/* Footer */
+footer {
+    background: #1f1f1f;
+    opacity: 78%;
+    text-align: center;
+    color: white;
+    border-radius: 1.3px;
+}
+
+section{
+    margin-top: 2.6em;
+    padding: 1em;
+    background: #525252;
+    text-align: center;
+    color: white;
+    border-radius: 3.9px;
+
+}
+
+.bordesRedondeados{
+    border-radius: 26px;
+}
+
+.sombra{
+    box-shadow:3.9px 3.9px rgba(52,52,52,.52);
+}
