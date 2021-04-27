@@ -1,0 +1,96 @@
+html, body {
+    height: 100%;
+  }
+
+body {
+    background-color: grey;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 100;
+    font-size: 1.3em;
+    background: url('https://image.freepik.com/free-vector/abstract-technology-chip-processor-background-circuit-board-technology-background_115579-1187.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.h0 {
+    margin-top: -.89em;
+
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-style: "Black 900";
+    font-size: 3em;
+    font-weight: 900;
+    /* text-shadow: 3px 3px 3px #ababab; */
+}
+
+h1 {
+    color: rgb(98, 4, 185);
+    font-style: normal;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: capitalize;
+
+}
+
+/* Footer */
+footer {
+    background: #1f1f1f;
+    opacity: 78%;
+    text-align: center;
+    color: white;
+    border-radius: 1.3px;
+
+    flex-shrink: 0;
+    /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    padding: 20px;
+
+}
+
+section {
+    margin-top: 2.6em;
+    padding: 1em;
+    background: #525252;
+    text-align: center;
+    color: white;
+    border-radius: 3.9px;
+
+}
+
+.bordesRedondeados {
+    border-radius: 26px;
+}
+
+.sombra {
+    box-shadow: 3.9px 3.9px rgba(52, 52, 52, .52);
+}
+
+section {
+    opacity: 89%;
+}
+
+.miParrafo {
+    /*
+    Color de texto: #0033ff 
+    Espacio entre letras: 1px 
+    Espacio entre renglones: 15px 
+    Tamaño de texto: 12px 
+    */
+
+    color: #0033ff;
+    letter-spacing: 1px;
+    line-height: 15px;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.wrapper {
+    min-height: 89%;
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -50px;
+  }
+
+  .footer,
+.push {
+    height: -50px;
+  }
