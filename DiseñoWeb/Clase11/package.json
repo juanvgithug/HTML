@@ -1,0 +1,22 @@
+{
+  "name": "clase11",
+  "version": "1.0.0",
+  "description": "Clase 11",
+  "main": "enlinea.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/main.css && node-sass --include-path scss scss/misitio.scss css/misitio.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "keywords": [
+    "Coderhouse",
+    "Camada",
+    "17630"
+  ],
+  "author": "Juan Vidal",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
