@@ -1,0 +1,28 @@
+$base-font-size: 16px; //variable
+$base-height: 100%;
+$base-font-family: 'Source Sans Pro', sans-serif;
+$base-font-weight: 100;
+$body-background-color: grey;
+
+$magic-size: 1.3em;
+
+
+body{
+    font-size: $base-font-size;
+}
+
+html,
+body {
+	height: $base-height;
+}
+
+body {
+	background-color: $body-background-color;
+	font-family: $base-font-family;
+	font-weight: $base-font-weight;
+	font-size: $magic-size;
+	background: url('https://image.freepik.com/free-vector/abstract-technology-chip-processor-background-circuit-board-technology-background_115579-1187.jpg');
+	background-size: cover;
+	background-repeat: repeat;
+	animation: pulse 10s infinite;
+}

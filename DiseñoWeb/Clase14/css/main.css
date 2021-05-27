@@ -1,0 +1,16 @@
+body {
+  font-size: 16px; }
+
+html,
+body {
+  height: 100%; }
+
+body {
+  background-color: grey;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 100;
+  font-size: 1.3em;
+  background: url("https://image.freepik.com/free-vector/abstract-technology-chip-processor-background-circuit-board-technology-background_115579-1187.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  animation: pulse 10s infinite; }

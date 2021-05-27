@@ -3,6 +3,7 @@
 Juan Vidal - Camada 17630
 
 */
+
 @import 'defaults.scss'; //default params
 
 @import 'flexies.scss'; //custom objects
@@ -55,12 +56,12 @@ header {
     .logo {
         color: #fff;
         text-decoration: none;
-        line-height: 52px;
+        line-height: $magic-number * 4px;
         text-align: center;
 
         a {
             color: #fff;
-            font-size: 39px;
+            font-size: $magic-number * 3px;
             font-weight: 700;
         }
 
@@ -115,7 +116,7 @@ h1 {
 
 h2 {
     grid-area: myHeader;
-    font-size: $magic-number-small;
+    font-size: $magic-number-rem-small;
     font-weight: 500;
     text-align: center;
 }
@@ -140,11 +141,11 @@ select {
 }
 
 .bordesRedondeados {
-    border-radius: 26px;
+    border-radius: $magic-number * 2px;
 }
 
 .sombra {
-    box-shadow: 3.9px 3.9px rgba(39, 39, 39, .52);
+    box-shadow: 3.9px 3.9px rgba($magic-number * 3, $magic-number * 3, $magic-number * 3, $magic-number * .4);
 }
 
 .textoPrecioTachado {
@@ -164,5 +165,5 @@ select {
 }
 
 .coderColumn {
-    padding-left: 39%;
+    padding-left: $magic-number * 3%;
 }

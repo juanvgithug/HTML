@@ -17,7 +17,7 @@ table.tablaBasica tbody td {
     color: black;
     font-weight: bold;
     background-color: white;
-    opacity: 52%;
+    opacity: $magic-number * 4%;
 }
 
 table.tablaBasica thead {
