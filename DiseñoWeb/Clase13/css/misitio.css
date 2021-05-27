@@ -256,7 +256,7 @@ body {
   grid-area: myFooter;
   min-height: 2.6rem; }
 
-article {
+article, .article2, .article3, .article4 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -268,15 +268,15 @@ article {
   height: auto;
   opacity: 78%;
   color: ivory;
-  border-radius: 3.9px;
+  border-radius: 39px;
   margin-bottom: 2rem;
   background-image: url("../media/mosaic_pattern.png"); }
-  article p {
+  article p, .article2 p, .article3 p, .article4 p {
     margin-right: 1.3rem; }
-  article form {
+  article form, .article2 form, .article3 form, .article4 form {
     max-height: 15.7rem; }
 
-.article2 {
+.article2, .article3, .article4 {
   float: left;
   padding: 26px;
   width: 100%;
@@ -285,10 +285,10 @@ article {
   opacity: 67%;
   color: ivory;
   border-radius: 3.9px;
-  box-shadow: black;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.78);
   background-image: url("../media/mosaic_pattern.png"); }
 
-.article3 {
+.article3, .article4 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -313,12 +313,12 @@ article {
   flex: 1 1 50%;
   /* flex: 1; */ }
 
-.main article {
+.main article, .main .article2, .main .article3, .main .article4 {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #000; }
 
-.main article:nth-last-child(1) {
+.main article:nth-last-child(1), .main .article2:nth-last-child(1), .main .article3:nth-last-child(1), .main .article4:nth-last-child(1) {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: none; }
@@ -515,9 +515,9 @@ footer {
 @media screen and (max-width: 600px) {
   footer {
     justify-content: space-around; }
-  article h2 {
+  article h2, .article2 h2, .article3 h2, .article4 h2 {
     max-height: 2.6rem; }
-  article {
+  article, .article2, .article3, .article4 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -650,7 +650,7 @@ select {
   border-radius: 26px; }
 
 .sombra {
-  box-shadow: 3.9px 3.9px rgba(39, 39, 39, 0.52); }
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.78); }
 
 .textoPrecioTachado {
   color: red;
