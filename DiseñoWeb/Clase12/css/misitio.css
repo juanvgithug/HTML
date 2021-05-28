@@ -285,7 +285,7 @@ article, .article2, .article3, .article4 {
   opacity: 67%;
   color: ivory;
   border-radius: 3.9px;
-  box-shadow: black;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.78);
   background-image: url("../media/mosaic_pattern.png"); }
 
 .article3, .article4 {
@@ -650,7 +650,7 @@ select {
   border-radius: 26px; }
 
 .sombra {
-  box-shadow: 3.9px 3.9px #272727; }
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.78); }
 
 .textoPrecioTachado {
   color: red;

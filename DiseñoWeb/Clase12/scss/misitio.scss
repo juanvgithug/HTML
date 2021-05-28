@@ -145,7 +145,8 @@ select {
 }
 
 .sombra {
-    box-shadow: 3.9px 3.9px rgba($magic-number * 3, $magic-number * 3, $magic-number * 3, $magic-number * .4);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.78);
+    //box-shadow: 3.9px 3.9px rgba($magic-number * 3, $magic-number * 3, $magic-number * 3, $magic-number * .4);
 }
 
 .textoPrecioTachado {
