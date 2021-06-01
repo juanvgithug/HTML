@@ -1,0 +1,170 @@
+/*
+
+Juan Vidal - Camada 17630
+
+*/
+
+@import 'defaults.scss'; //default params
+
+@import 'flexies.scss'; //custom objects
+@import 'langmenu.scss'; //custom objects / floating lang menu
+@import 'animaciones.scss'; //animations / backgnd animations
+@import 'articles.scss'; //custom objects / articles
+@import 'contenedores.scss'; //custom objects / containers
+@import 'carousel.scss'; //custom objects / BS: carousel
+@import 'tabla.scss'; //custom objects / table
+@import 'footer.scss';
+
+@import 'mediaqueries.scss'; //media queries
+@import 'waicon.scss'; // floating WA icon
+
+
+
+/*RESET CSS*/
+* {
+    font-family: $base-font-family-SourceSans;
+    font-weight: $base-font-weight-medium;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    padding-top: 159px;
+}
+
+header {
+    background: #0c1313;
+    opacity: 89%;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    float: top;
+    z-index: 999;
+
+    /* Flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .logo {
+        color: #fff;
+        text-decoration: none;
+        line-height: $magic-number * 4px;
+        text-align: center;
+
+        a {
+            color: #fff;
+            font-size: $magic-number * 3px;
+            font-weight: 700;
+        }
+
+        img {
+            width: 78px;
+            vertical-align: top;
+        }
+    }
+
+    nav ul {
+        width: 100%;
+        /* Flexbox */
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-decoration: none;
+        list-style-type: none;
+        justify-content: flex-start;
+    }
+
+    nav a {
+        background: $nav-menu-back;
+        color: $nav-menu-fore;
+        text-align: center;
+        text-decoration: none;
+        list-style-type: none;
+        padding: 10px;
+
+        /* Flexbox */
+        display: flex;
+        flex-grow: 1;
+    }
+
+    nav a:hover {
+        background: #e74c3c;
+    }
+
+}
+
+h1 {
+    background: #8E2DE2;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #4A00E0, #8E2DE2);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #4A00E0, #8E2DE2);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 189px;
+    font-weight: 500;
+}
+
+h2 {
+    grid-area: myHeader;
+    font-size: $magic-number-rem-small;
+    font-weight: 500;
+    text-align: center;
+}
+
+button {
+    color: black;
+    border-radius: 13px;
+    margin-bottom: 20em;
+
+}
+
+input {
+    color: black;
+}
+
+textarea {
+    color: black;
+}
+
+select {
+    color: black;
+}
+
+.bordesRedondeados {
+    border-radius: $magic-number * 2px;
+}
+
+.sombra {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.78);
+    //box-shadow: 3.9px 3.9px rgba($magic-number * 3, $magic-number * 3, $magic-number * 3, $magic-number * .4);
+}
+
+.textoPrecioTachado {
+    color: red;
+    font-weight: 800;
+    text-decoration: line-through;
+}
+
+.textoPrecioSinDesc {
+    color: red;
+    font-weight: 800;
+}
+
+.textoContacto {
+    margin-top: 1.3em;
+    font-size: .89em;
+}
+
+.coderColumn {
+    padding-left: $magic-number * 3%;
+}

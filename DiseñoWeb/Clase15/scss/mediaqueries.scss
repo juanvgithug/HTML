@@ -1,0 +1,61 @@
+@media screen and (max-width: 812px) {
+    .contenedor {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .contacto {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .contenedor3 {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    footer {
+        justify-content: space-around;
+    }
+
+    article h2 {
+        max-height: 2.6rem;
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        gap: 0px 0px;
+        grid-template-areas:
+            "myHeader "
+            "."
+            "myFooter ";
+
+        text-align: justify;
+        background-color: #787878;
+        opacity: 78%;
+        color: ivory;
+        border-radius: 3.9px;
+        background-image: url('../media/mosaic_pattern.png');
+
+    }
+
+
+}
+
+
+

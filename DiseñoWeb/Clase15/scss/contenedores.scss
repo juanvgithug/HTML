@@ -1,0 +1,84 @@
+/*
+
+Clases Contenedores
+
+*/
+
+@import 'defaults.scss'; //default stuff. 
+
+.contenedor {
+    /* background: #ccc; */
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.contenedor::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    left: 0;
+    right: 0;
+    display: block;
+    background-image: url('../media/bluetech.jpg');
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+    z-index: -999;
+}
+
+.contenedor__contacto {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+
+    font-size: .78rem;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-bottom: .52rem;
+
+    a {
+        color: #ccc;
+    }
+    
+    p {
+        color: #ccc;
+    }
+}
+
+.contenedor3 {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}

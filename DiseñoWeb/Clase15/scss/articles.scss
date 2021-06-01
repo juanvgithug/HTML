@@ -1,0 +1,107 @@
+@import 'defaults.scss'; //default stuff. 
+
+.articleFooter {
+    grid-area: myFooter;
+    min-height: 2.6rem;
+}
+
+
+article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px 0px;
+    grid-template-areas:
+        "myHeader myHeader"
+        ". ."
+        "myFooter myFooter";
+
+    padding: 20px;
+    text-align: justify;
+    background-color: #787878;
+    height: auto;
+    opacity: $magic-number * 6%;
+    color: ivory;
+    border-radius: $magic-number * 3px;
+    margin-bottom: 2rem;
+    background-image: url('../media/mosaic_pattern.png');
+    p {
+        margin-right: $magic-number-rem-small;
+    }
+    form {
+        max-height: 15.7rem;
+    }
+}
+
+.article2 {
+    @extend article;
+    float: left;
+    padding: $magic-number * 2px;
+    width: 100%;
+    background-color: #787878;
+    height: auto;
+    opacity: 67%;
+    color: ivory;
+    border-radius: 3.9px;
+    //box-shadow: black;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.78);
+    background-image: url('../media/mosaic_pattern.png');
+
+}
+.article3 {
+    @extend .article2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: $magic-number-rem;
+    padding: $min-padding em;
+    margin-bottom: 30 rem;
+    height: $full-percent;
+
+}
+
+.article4 {
+    @extend .article3;
+    margin-top: $magic-number-rem;
+    padding: 1 em;
+    margin-bottom: 30 rem;
+    height: $full-percent;
+    p {
+
+        margin-right: $full-percent / 3;
+        margin-left: $full-percent / 3;
+        width: $full-percent;
+    }
+}
+
+.main {
+    /* background: #fff; */
+    padding: 20px;
+
+    flex: 1 1 50%;
+    /* flex: 1; */
+}
+
+.main article {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.main article:nth-last-child(1) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+section {
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+/* Manejo columnas */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}

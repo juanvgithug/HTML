@@ -1,0 +1,16 @@
+/* defaults */
+
+$base-font-family-SourceSans:'Source Sans Pro',
+sans-serif;
+$base-font-weight-medium: 200;
+$nav-menu-back : #c0392b;
+$nav-menu-fore: #fff;
+$magic-number: 13;
+$magic-number-unit: $magic-number * .1;
+$float-margin-top: $magic-number+3px;
+$magic-number-rem: $magic-number * 1rem;
+$magic-number-rem-small: $magic-number * .1rem;
+
+$min-padding: 1;
+
+$full-percent: 100%;
