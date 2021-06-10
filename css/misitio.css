@@ -271,12 +271,19 @@ article, .article2, .article3, .article4 {
   border-radius: 39px;
   margin-bottom: 2rem;
   background-image: url("../media/mosaic_pattern.png"); }
+  article h2, .article2 h2, .article3 h2, .article4 h2 {
+    color: #e74c3c;
+    text-transform: uppercase;
+    letter-spacing: 0.13rem;
+    text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc; }
   article p, .article2 p, .article3 p, .article4 p {
+    letter-spacing: 0.13rem;
     margin-right: 1.3rem; }
   article form, .article2 form, .article3 form, .article4 form {
     max-height: 15.7rem; }
 
 .article2, .article3, .article4 {
+  grid-template-rows: repeat(1, 1fr);
   float: left;
   padding: 26px;
   width: 100%;
@@ -403,6 +410,8 @@ Clases Contenedores
   justify-content: center;
   align-content: center;
   align-items: center; }
+  .contenedor3 a {
+    text-decoration: none; }
 
 .carousel {
   align-items: center; }
@@ -465,6 +474,7 @@ footer {
   max-width: 100%;
   margin: auto;
   font-size: .78em;
+  flex-shrink: 0;
   /* Flexbox */
   display: flex;
   flex-direction: row;
@@ -495,6 +505,22 @@ footer {
   padding-top: .26em;
   padding-left: 0px;
   padding-bottom: 1em; }
+
+.contenedor {
+  top: 0;
+  min-height: calc(100vh - 70px); }
+
+.footer {
+  height: 50px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%; }
+
+@media screen and (width: 1920px) {
+  .main {
+    margin-left: 13%;
+    margin-right: 13%; } }
 
 @media screen and (max-width: 812px) {
   .contenedor {

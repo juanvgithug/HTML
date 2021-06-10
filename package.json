@@ -1,8 +1,8 @@
 {
-  "name": "clase14",
+  "name": "Proyecto Final Diseño Web / Coderhouse",
   "version": "1.0.0",
-  "description": "Clase 13",
-  "main": "enlinea.html",
+  "description": "Proyecto Final",
+  "main": "indexnpm.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/style.scss css/main.css && node-sass --include-path scss scss/misitio.scss css/misitio.css",

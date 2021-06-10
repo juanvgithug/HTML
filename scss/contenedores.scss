@@ -74,6 +74,10 @@ Clases Contenedores
     max-width: 100%;
     margin: auto;
 
+    a{
+        text-decoration: none;
+    }
+
     /* Flexbox */
     display: flex;
     flex-direction: row;
