@@ -14,7 +14,7 @@ Clases Contenedores
 
     /* Flexbox */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
@@ -23,7 +23,7 @@ Clases Contenedores
 
 .contenedor::after {
     content: ' ';
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     top: 0;
@@ -80,7 +80,7 @@ Clases Contenedores
 
     /* Flexbox */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;

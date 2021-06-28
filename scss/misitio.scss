@@ -18,6 +18,8 @@ Juan Vidal - Camada 17630
 @import 'mediaqueries.scss'; //media queries
 @import 'waicon.scss'; // floating WA icon
 
+@import 'fonts.scss'; //custom fonts
+
 
 
 /*RESET CSS*/
@@ -31,14 +33,14 @@ Juan Vidal - Camada 17630
 }
 
 body {
-    padding-top: 159px;
+    //padding-top: 159px;
 }
 
 header {
     background: #0c1313;
     opacity: 89%;
     width: 100%;
-    padding: 20px;
+    padding: 9px;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -56,13 +58,14 @@ header {
     .logo {
         color: #fff;
         text-decoration: none;
-        line-height: $magic-number * 4px;
+        line-height: $magic-number * 2px;
         text-align: center;
 
         a {
             color: #fff;
-            font-size: $magic-number * 3px;
+            font-size: $magic-number * 2px;
             font-weight: 700;
+            font-family: 'Open Sans Condensed';
         }
 
         img {
@@ -167,4 +170,11 @@ select {
 
 .coderColumn {
     padding-left: $magic-number * 3%;
+}
+
+.navbar
+{
+
+    width: inherit;
+
 }

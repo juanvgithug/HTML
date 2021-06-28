@@ -4,6 +4,10 @@ Juan Vidal - Camada 17630
 
 */
 /* defaults */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Roboto&effect=fire-animation|neon|outline|emboss|shadow-multiple');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
 .flex-grid {
   display: flex; }
 
@@ -353,7 +357,7 @@ Clases Contenedores
   margin: auto;
   /* Flexbox */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
@@ -361,7 +365,7 @@ Clases Contenedores
 
 .contenedor::after {
   content: ' ';
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
   top: 0;
@@ -405,7 +409,7 @@ Clases Contenedores
   margin: auto;
   /* Flexbox */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
@@ -530,11 +534,11 @@ footer {
     flex-direction: column;
     margin-left: 0; }
   .contenedor3 {
-    flex-direction: column;
-    margin-left: 0; }
+    flex-direction: column; }
   header {
     flex-direction: column;
-    padding: 0; }
+    padding: 0;
+    max-height: 130px; }
   header nav {
     width: 100%; } }
 
@@ -587,14 +591,11 @@ footer {
   box-sizing: border-box;
   text-decoration: none; }
 
-body {
-  padding-top: 159px; }
-
 header {
   background: #0c1313;
   opacity: 89%;
   width: 100%;
-  padding: 20px;
+  padding: 9px;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -609,12 +610,13 @@ header {
   header .logo {
     color: #fff;
     text-decoration: none;
-    line-height: 52px;
+    line-height: 26px;
     text-align: center; }
     header .logo a {
       color: #fff;
-      font-size: 39px;
-      font-weight: 700; }
+      font-size: 26px;
+      font-weight: 700;
+      font-family: 'Open Sans Condensed'; }
     header .logo img {
       width: 78px;
       vertical-align: top; }
@@ -693,3 +695,6 @@ select {
 
 .coderColumn {
   padding-left: 39%; }
+
+.navbar {
+  width: inherit; }
