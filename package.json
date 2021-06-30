@@ -1,11 +1,11 @@
 {
   "name": "Proyecto Final Diseño Web / Coderhouse",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Proyecto Final",
-  "main": "indexnpm.html",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/style.scss css/main.css && node-sass --include-path scss scss/misitio.scss css/misitio.css",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "keywords": [

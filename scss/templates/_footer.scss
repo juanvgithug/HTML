@@ -1,0 +1,141 @@
+/*=================================================================
+  Footer section
+==================================================================*/
+
+.top-footer {
+  background-color: #222222;
+  border-top: 1px solid #404040;
+  padding: 100px 0 80px;
+
+  h3 {
+    font-size: 16px;
+    line-height: 1.5;
+    color: $light;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 30px;
+    color: #bdbdbd;
+    font-weight: 300;
+    padding-right: 20px;
+  }
+
+  li a {
+    font-size: 13px;
+    line-height: 30px;
+    color: #bdbdbd;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    transition: color .3s;
+    font-family: $primary-font;
+    display: block;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.footer-bottom {
+  text-align: center;
+  background-color: #1b1b1b;
+  border-top: 1px solid #2c2c2c;
+  padding: 30px 0;
+
+  h5 {
+    font-size: 12px;
+    line-height: 1;
+    color: #888888;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 7px;
+    margin-bottom: 3px;
+  }
+
+  h6 {
+    font-size: 11px;
+    line-height: 15px;
+    color: #888888;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+  }
+
+  p {
+    color: #656565;
+  }
+
+  a {
+    color: $primary-color;
+  }
+}
+
+.subscribe-form {
+  .form-control {
+    border-radius: 0;
+  }
+}
+
+/* Footer + custom styles*/
+.footerCoder {
+  //background: #0c1313;
+  width: 100%;
+  padding: $magic-number * 2px;
+  opacity: 89%;
+  padding: .13rem;
+  text-align: center;
+  color: white;
+  max-width: 100%;
+  margin: auto;
+  font-size: .78em;
+  flex-shrink: 0;
+
+  /* Flexbox */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  .col {
+    flex: 1;
+  }
+
+  img {
+    height: 1.78em;
+    background-repeat: no-repeat;
+    width: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .imgCoder {
+    text-align: initial;
+  }
+
+  .colPoweredBy {
+    font-style: italic;
+    text-align: end;
+    margin-top: .52em;
+  }
+
+  .footerLogo {
+    padding-top: .26em;
+    padding-left: 0px;
+    padding-bottom: 1em;
+  }
+
+  .contenedor {
+    top: 0;
+    min-height: calc(100vh - 70px);
+  }
+}

@@ -1,0 +1,35 @@
+/*=================================================================
+  Header section
+==================================================================*/
+.single-page-header {
+	background: #1f2532;
+	padding: $magic-number * 4px 0;
+	text-align: center;
+	color: $light;
+	position: relative;
+	margin-top: 89px;
+
+	@include desktop {
+		margin-top: 52px;
+	}
+
+	.breadcrumb {
+		background: transparent;
+		display: inline-block;
+
+		li {
+			display: inline-block;
+
+			a {
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+.brandLogo {
+	width: 26%;
+	color: $light;
+	text-transform: capitalize;
+
+}

@@ -1,44 +1,223 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-	<title>404 - Not Found | Mi Sitio</title>
+	<!-- SEO -->
+	<title>Incredible Technologies</title>
+	<meta name="description"
+		content="Consultoría integral de TI. Somos expertos en transformación digital y metodologías ágiles. Usamos modelos de contratación flexibles y escalables. Gestion de proyectos, Data Science, Infraestructura, Software Factory, Staffing.">
 
-	<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:700,900" rel="stylesheet">
+	<!-- Google / Search Engine Tags -->
+	<meta itemprop="name" content="Incredible Technologies">
+	<meta itemprop="description"
+		content="Consultoría integral de TI. Somos expertos en transformación digital y metodologías ágiles. Usamos modelos de contratación flexibles y escalables. Gestion de proyectos, Data Science, Infraestructura, Software Factory, Staffing.">
+	<meta itemprop="image" content="">
 
+	<!-- Facebook Meta Tags -->
+	<meta property="og:url" content="http://misitio.com">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Incredible Technologies">
+	<meta property="og:description"
+		content="Consultoría integral de TI. Somos expertos en transformación digital y metodologías ágiles. Usamos modelos de contratación flexibles y escalables. Gestion de proyectos, Data Science, Infraestructura, Software Factory, Staffing.">
+	<meta property="og:image" content="">
+
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Incredible Technologies">
+	<meta name="twitter:description"
+		content="Consultoría integral de TI. Somos expertos en transformación digital y metodologías ágiles. Usamos modelos de contratación flexibles y escalables. Gestion de proyectos, Data Science, Infraestructura, Software Factory, Staffing.">
+	<meta name="twitter:image" content="">
+	<meta name="keywords"
+		content="IT, CONSULTORIA, TRANSFORMACION DIGITAL, METODOLOGIAS AGILES, PROYECTOS, DATA SCIENCE, INFRAESTRUCTURA, SOFTWARE FACTORY, STAFFING.">
+
+	<meta name="author" content="Incredible Technologies SA">
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" href="./media/favicons/apple-touch-icon.png" sizes="180x180">
+	<link rel="icon" href="./media/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+	<link rel="icon" href="./media/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+	<link rel="manifest" href="./media/favicons/manifest.json">
+	<link rel="mask-icon" href="./media/favicons/safari-pinned-tab.svg">
+	<link rel="icon" href="./media/favicons/favicon.ico">
+
+	<!-- CSS  -->
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+	<!-- sweet Alert -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.7/dist/sweetalert2.all.min.js"></script>
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<!-- Normalize.Css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 	<!-- Font Awesome  -->
-    <script src="https://kit.fontawesome.com/850f9c20c6.js" crossorigin="anonymous"></script>
-
-	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="css/404style.css" />
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-
+	<script src="https://kit.fontawesome.com/850f9c20c6.js" crossorigin="anonymous"></script>
+	<!-- Flags -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+	<!-- Revo Slider  -->
+	<!-- RS5.0 Main Stylesheet -->
+	<link rel="stylesheet" type="text/css" href="plugins/revo-slider/css/settings.css">
+	<!-- RS5.0 Layers and Navigation Styles -->
+	<link rel="stylesheet" type="text/css" href="plugins/revo-slider/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="plugins/revo-slider/css/navigation.css">
+	<!-- REVOLUTION STYLE SHEETS -->
+	<link rel="stylesheet" type="text/css" href="plugins/revo-slider/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+	<link rel="stylesheet" type="text/css" href="plugins/revo-slider/fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="plugins/revo-slider/css/settings.css">
+	<link rel="stylesheet" type="text/css" href="plugins/revo-slider/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="plugins/revo-slider/css/navigation.css">
+	<!-- Lightbox.min css -->
+	<link rel="stylesheet" href="plugins/lightbox2/dist/css/lightbox.min.css">
+	<!-- Slick Carousel -->
+	<link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css">
+	<link rel="stylesheet" href="plugins/slick-carousel/slick/slick-theme.css">
+	<!-- Main Stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
 </head>
+<!-- Begin Site -->
 
-<body>
+<body id="body">
 
-	<div id="notfound">
-		<div class="notfound">
-			<div class="notfound-404">
-				<h1>404</h1>
-				<h2>Page not found</h2>
+<!--
+Start Preloader
+==================================== -->
+<div id="preloader">
+  <div class="preloader">
+    <div class="sk-circle1 sk-child"></div>
+    <div class="sk-circle2 sk-child"></div>
+    <div class="sk-circle3 sk-child"></div>
+    <div class="sk-circle4 sk-child"></div>
+    <div class="sk-circle5 sk-child"></div>
+    <div class="sk-circle6 sk-child"></div>
+    <div class="sk-circle7 sk-child"></div>
+    <div class="sk-circle8 sk-child"></div>
+    <div class="sk-circle9 sk-child"></div>
+    <div class="sk-circle10 sk-child"></div>
+    <div class="sk-circle11 sk-child"></div>
+    <div class="sk-circle12 sk-child"></div>
+  </div>
+</div> 
+<!--
+End Preloader
+==================================== -->
+
+
+  
+
+	<section class="page-404 text-center d-flex align-items-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>404</h1>
+					<h2>Página no encontrada</h2>
+  					<p>Lo sentimos, pero la página que busca no ha sido encontrada.</p>
+					<a href="index.html" class="btn btn-main mt-20">Ir a Principal</a>
+				</div>
 			</div>
-			<a href="index.html"><i class="fas fa-home"></i></a>
 		</div>
-	</div>
+	</section>
+	
+<!-- 
+Essential Scripts
+=====================================-->
+<!-- Main jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- Parallax -->
+<script src="plugins/parallax/jquery.parallax-1.1.3.js"></script>
+<!-- lightbox -->
+<script src="plugins/lightbox2/dist/js/lightbox.min.js"></script>
+<!-- Owl Carousel -->
+<script src="plugins/slick-carousel/slick/slick.min.js"></script>
+<!-- Portfolio Filtering -->
+<script src="plugins/filterzr/jquery.filterizr.min.js"></script>
+<!-- Smooth Scroll js -->
+<script src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI14J_PNWVd-m0gnUBkjmhoQyNyd7nllA"></script>
+<!-- Form Validation -->
+<script src="plugins/form-validation/jquery.form.js"></script>
+<script src="plugins/form-validation/jquery.validate.min.js"></script>
+<!-- Custom js -->
+<script type="text/javascript" src="plugins/revo-slider/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="plugins/revo-slider/js/jquery.themepunch.revolution.min.js"></script>
+<script src="js/script.js"></script>
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
+(Load Extensions only on Local File Systems ! 
+The following part can be removed on Server for On Demand Loading) -->
+<script type="text/javascript" src="plugins/revo-slider/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="plugins/revo-slider/js/extensions/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="plugins/revo-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="plugins/revo-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="plugins/revo-slider/js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="plugins/revo-slider/js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="plugins/revo-slider/js/extensions/revolution.extension.video.min.js"></script>
+<script>
+    /* https://learn.jquery.com/using-jquery-core/document-ready/ */
+    jQuery(document).ready(function () {
+        /* initialize the slider based on the Slider's ID attribute */
+        jQuery('#rev_slider_1').show().revolution({
 
+            /* options are 'auto', 'fullwidth' or 'fullscreen' */
+            sliderLayout: 'fullscreen',
+
+            /* basic navigation arrows and bullets */
+            navigation: {
+
+                arrows: {
+                    style: "zeus",
+                    enable: true,
+                    hide_onmobile: true,
+                    hide_under: 600,
+                    hide_onleave: true,
+                    hide_delay: 200,
+                    hide_delay_mobile: 1200,
+                    tmp: '<div class="tp-title-wrap">    <div class="tp-arr-imgholder"></div> </div>',
+                    left: {
+                        h_align: "left",
+                        v_align: "center",
+                        h_offset: 30,
+                        v_offset: 0
+                    },
+                    right: {
+                        h_align: "right",
+                        v_align: "center",
+                        h_offset: 30,
+                        v_offset: 0
+                    }
+                }
+                ,
+                bullets: {
+                    enable: false,
+                    hide_onmobile: true,
+                    hide_under: 600,
+                    style: "metis",
+                    hide_onleave: true,
+                    hide_delay: 200,
+                    hide_delay_mobile: 1200,
+                    direction: "horizontal",
+                    h_align: "center",
+                    v_align: "bottom",
+                    h_offset: 0,
+                    v_offset: 30,
+                    space: 5,
+                    tmp: '<span class="tp-bullet-img-wrap">  <span class="tp-bullet-image"></span></span><span class="tp-bullet-title">{{title}}</span>'
+                }
+            }
+        });
+    });
+</script>
 </body>
-
 </html>
